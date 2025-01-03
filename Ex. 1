@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define SIZE 4
-int top = -1, stack[SIZE];
+int top = -1, stack[SIZE],i;
 void push();
 void pop();
 void show();
@@ -74,7 +74,7 @@ void show()
     else
     {
         printf("\nElements present in the stack: \n");
-        for (int i = top; i >= 0; i--)
+        for (i = top; i >= 0; i--)
             printf("%d\n", stack[i]);
     }
 }
