@@ -33,10 +33,10 @@ int main()
             exit(1);
             default:
             printf("Wrong choice \n");
-        } /* End of switch */
-    } /* End of while */
+        } 
+    } 
     return 0;
-} /* End of main() */
+} 
  
 void insert()
 {
@@ -46,14 +46,13 @@ void insert()
     else
     {
         if (front == - 1)
-        /*If queue is initially empty */
         front = 0;
         printf("Inset the element in queue : ");
         scanf("%d", &item);
         rear = rear + 1;
         queue[rear] = item;
     }
-} /* End of insert() */
+} 
  
 void delete()
 {
@@ -67,7 +66,7 @@ void delete()
         printf("Element deleted from queue is : %d\n", queue[front]);
         front = front + 1;
     }
-} /* End of delete() */
+} 
  
 void display()
 {
@@ -81,5 +80,5 @@ void display()
             printf("%d ", queue[i]);
         printf("\n");
     }
-} /* End of display() */
+} 
 
