@@ -5,7 +5,7 @@
     struct node* left;  
     struct node* right;  
 };  
-  /*To create a new node*/  
+  
 struct node* createNode(int val)  
 {  
     struct node* Node = (struct node*)malloc(sizeof(struct node));  
@@ -14,7 +14,7 @@ struct node* createNode(int val)
     Node->right = NULL;  
      return (Node);  
 }  
-  /*function to traverse the nodes of binary tree in preorder*/  
+
 void preorder(struct node* root)  
 {  
     if (root == NULL)  
@@ -24,7 +24,7 @@ void preorder(struct node* root)
    preorder(root->right);  
 }  
 
- /*function to traverse the nodes of binary tree in Inorder*/  
+
 void inorder(struct node* root)  
 {  
     if (root == NULL)  
@@ -34,7 +34,7 @@ void inorder(struct node* root)
     inorder(root->right);  
 }  
   
-/*function to traverse the nodes of binary tree in postorder*/  
+
 void postorder(struct node* root)  
 {  
     if (root == NULL)  
