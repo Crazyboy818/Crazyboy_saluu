@@ -1,6 +1,6 @@
 #include <stdio.h>  
 #include <stdlib.h>  
-#define max 10
+#define MAX 10
 int a[10] = {10, 44, 19, 96, 27, 31, 33, 35, 42, 49};
 int b[10];
  
@@ -43,10 +43,10 @@ int main( )
 {
   int i;
   printf("List before sorting\n");
-     for(i = 0; i < max; i++)
+     for(i = 0; i < MAX; i++)
      printf("%d ", a[i]);
-  sort(0, max-1);
+  sort(0, MAX-1);
   printf("\nList after sorting\n");
-     for(i = 0; i < max; i++)
+     for(i = 0; i < MAX; i++)
      printf("%d ", a[i]);
 }
